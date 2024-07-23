@@ -11,12 +11,12 @@ app.use(bodyParser.json());
 /* conexion a la base de datos mongodb */
 const mongoose = require('mongoose');
 
-const usuario = "full_stack_6pm";
-const password = "VeKkaFOEzuitO0qy";
+const usuario = "veterinario";
+const password = "v3t3r5n2r58";
 const dbName = "veterinaria";
 
 /*const uri = `mongodb+srv://${usuario}:${password}@cluster0.zpgqwwo.mongodb.net/${dbName}?retryWrites=true&w=majority&appName=Cluster0`;*/
-const uri = `mongodb+srv://veterinario:v3t3r5n2r58@cluster0.kivehkr.mongodb.net/`;
+const uri = `mongodb+srv://${usuario}:${password}@cluster0.kivehkr.mongodb.net/`;
 
 mongoose.connect(uri)
   .then(()=> console.log('conectado a mongodb')) 
